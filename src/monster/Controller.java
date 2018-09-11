@@ -11,12 +11,11 @@ public class Controller
 	//Constructors initialize data members
 	public Controller()
 	{
-		myMonster = new MarshmallowMonster();
+		myMonster = new MarshmallowMonster("bIngus");
 	}
 	
 	public void start()
 	{
 		System.out.println(myMonster);
-	
 	}
 }
