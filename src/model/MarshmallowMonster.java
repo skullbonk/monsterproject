@@ -36,9 +36,16 @@ public class MarshmallowMonster
 	
 	
 	
+	
+	
 	public String toString()
 	{
-		String description = "";
+		String description = "This is " + name + "."
+							+ " Legs: " + legCount
+							+ " Eyes: " + eyeCount
+							+ " Noses: " + hasNoses
+							+ " Arms: " + armCount
+							+ " He would really appreciate it if someone helped him out.";
 		
 		return description;
 	}
