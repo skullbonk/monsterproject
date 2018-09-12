@@ -2,6 +2,7 @@ package model;
 
 public class MarshmallowMonster
 {
+
 	//==============Declaration section=============
 	
 	
@@ -13,21 +14,6 @@ public class MarshmallowMonster
 	
 	
 	
-	
-	
-	//public MarshmallowMonster()
-	//{
-		//default constructor
-		//boring
-	//}
-	
-	
-	public MarshmallowMonster(String name)
-	{
-		 //assigning name parameter to this
-	}
-	
-	
 	public MarshmallowMonster(String name, double legCount, int eyeCount, boolean hasNoses, int armCount)
 	{
 		this.name = name;
@@ -36,7 +22,6 @@ public class MarshmallowMonster
 		this.hasNoses = hasNoses;
 		this.armCount = armCount;
 	}
-	
 	
 	
 	
@@ -69,6 +54,38 @@ public class MarshmallowMonster
 	{
 		return armCount;
 	}
+	
+	
+	
+
+	
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+	
+	
+	public void setLegCount(double legCount)
+	{
+		this.legCount = legCount;
+	}
+	
+	public void setEyeCount(int eyeCount)
+	{
+		this.eyeCount = eyeCount;
+	}
+	
+	public void setHasNoses(boolean hasNoses)
+	{
+		this.hasNoses = hasNoses;
+	}
+	
+	public void setArmCount(int armCount)
+	{
+		this.armCount = armCount;
+	}
+	
+	
 	
 	
 	
