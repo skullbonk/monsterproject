@@ -13,11 +13,14 @@ public class MarshmallowMonster
 	
 	
 	
-	public MarshmallowMonster()
-	{
+	
+	
+	//public MarshmallowMonster()
+	//{
 		//default constructor
 		//boring
-	}
+	//}
+	
 	
 	public MarshmallowMonster(String name)
 	{
@@ -34,6 +37,38 @@ public class MarshmallowMonster
 		this.armCount = armCount;
 	}
 	
+	
+	
+	
+	public String getName()
+	{
+		return name;
+	}   
+	
+	
+	public double getLegCount()
+	
+	{
+		return legCount;
+	}
+	
+	
+	public int getEyeCount()
+	{
+		return eyeCount;
+	}
+	
+	
+	public boolean getHasNoses()
+	{
+		return hasNoses;
+	}
+	
+	
+	public int getArmCount()
+	{
+		return armCount;
+	}
 	
 	
 	
