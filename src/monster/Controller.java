@@ -2,7 +2,7 @@ package monster;
 
 import model.MarshmallowMonster;
 import javax.swing.JOptionPane;
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Controller
 {
@@ -10,21 +10,21 @@ public class Controller
 	//Declaration section
 	private MarshmallowMonster myMonster;
 	private MarshmallowMonster userMonster;
-	private Scanner inputScanner;
+	//private Scanner inputScanner;
 	
 	//Constructors initialize data members
 	public Controller()
 	{
 		myMonster = new MarshmallowMonster("bIngus", 5.0, 2, true, 3);
-		//userMonster = new MarshmallowMonster();
-		inputScanner = new Scanner(System.in);
+		userMonster = new MarshmallowMonster();
+	//	inputScanner = new Scanner(System.in);
 	
 	}
 	
 	
 	public void start()
 	{
-		JOptionPane.showMessageDialog(null,myMonster);
+		JOptionPane.showMessageDialog(null, myMonster);
 		
 		/////////////    User monster here
 		
@@ -32,9 +32,14 @@ public class Controller
 		//System.out.println("How many arms ya want?");
 		//int arms = inputScanner.nextInt();
 		String userInput = JOptionPane.showInputDialog(null, "How many arms ya want?");
-		int arms = 0;
+		int arms = 0; 
 		if(validInt(userInput))
 		{
+			arms = Integer.parseInt(userInput);
+		}
+		else
+		{
+			userInput = JOptionPane.showInputDialog(null, "Type an integer, Dingus. No letters. No decimals.");
 			arms = Integer.parseInt(userInput);
 		}
 		userMonster.setArmCount(arms);
@@ -52,12 +57,21 @@ public class Controller
 		
 		//System.out.println("Alright, now how many eyes do you want?");
 		//int eyes = inputScanner.nextInt();
-		userInput = JOptionPane.showInputDialog(null, "Alright, now how many eyes do you want?");
 		int eyes = 0;
+		userInput = JOptionPane.showInputDialog(null, "Alright, now how many eyes do you want?");
 		if(validInt(userInput))
 		{
 			eyes = Integer.parseInt(userInput);
 		}
+		else 
+		{
+			userInput = JOptionPane.showInputDialog(null, "Listen, kid. You gotta type an integer in here");
+			if(validInt(userInput))
+			{
+				eyes = Integer.parseInt(userInput);
+			}
+		}
+		
 		userMonster.setEyeCount(eyes);
 		//System.out.println("Wonderful, you have been granted " + userMonster.getEyeCount() + " eyes!");
 		JOptionPane.showMessageDialog(null, "Wonderful, you have been granted " + userMonster.getEyeCount() + "eyes.");

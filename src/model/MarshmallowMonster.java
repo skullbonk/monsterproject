@@ -12,7 +12,10 @@ public class MarshmallowMonster
 	private boolean hasNoses; //Vaiable and string don't have to match
 	private int armCount;
 	
-	
+	public MarshmallowMonster()
+	{
+		//This is boring and is also an object that has been made, no data
+	}
 	
 	public MarshmallowMonster(String name, double legCount, int eyeCount, boolean hasNoses, int armCount)
 	{
